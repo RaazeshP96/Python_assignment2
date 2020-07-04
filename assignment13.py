@@ -22,8 +22,10 @@ def Csvfiles(filename, lis1):
             name, address, age = i
             str2 = f'{name}, {address}, {age} \n'
             file.writelines(str2)
+    print('csv file is created')
 
 
+# filename='comma'
 filename = input("Enter the filename:")
 lis1 = [('George', '4312 Abbey Road', 22), ('John', '54 Love Ave', 21)]
 Csvfiles(filename, lis1)
