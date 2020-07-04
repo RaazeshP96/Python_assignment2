@@ -22,7 +22,8 @@ def anagrams(sentence):
     return s
 
 
-sen = 'This is cat and dan si tac'
+# sen = 'This is cat and dan si tac'
+sen = input('Enter the  Sentence:')
 sentence = sen.upper()
 
 angms = anagrams(sentence)
