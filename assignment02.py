@@ -9,14 +9,14 @@ import unittest
 def leapYear(year):
     return True if year % 4 == 0 else False
 
-year=int(input("Enter the year:"))
-print(leapYear(year))
 
+year = int(input("Enter the year:"))
+print(leapYear(year))
 
 
 class TestLeapYear(unittest.TestCase):
 
-    def passTest(self):
+    def test_pass(self):
         self.assertEqual(leapYear(2010), False)
         self.assertEqual(leapYear(2012), True)
 
